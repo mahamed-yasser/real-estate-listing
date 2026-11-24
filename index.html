@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cedar Homes | Property listing demo by Mahamed Yasser</title><meta name="description" content="Demo real estate listing site: filters, sorting, saved homes and an enquiry form. Fictional listings.">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="demo-bar">Demo site. Fictional properties, prices and agency. Enquiries are not sent anywhere.</div>
+<header><a class="brand" href="#">Cedar<span>Homes</span></a><button id="savedBtn" class="ghost">Saved <b id="sc">0</b></button></header>
+<section class="hero"><h1>Find a home that fits your life</h1><p>Filter by city, type, price and bedrooms. Save favourites and send an enquiry.</p>
+<form id="f" class="filters" aria-label="Filters"><label>City<select id="city"></select></label><label>Type<select id="type"><option value="">Any</option><option>Apartment</option><option>Villa</option><option>Studio</option></select></label><label>Max price<select id="max"><option value="0">Any</option><option value="150000">150,000</option><option value="250000">250,000</option><option value="400000">400,000</option></select></label><label>Bedrooms<select id="bed"><option value="0">Any</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option></select></label><label>Sort<select id="sort"><option value="n">Newest</option><option value="a">Price: low to high</option><option value="d">Price: high to low</option></select></label></form></section>
+<main><p id="count" class="mut" aria-live="polite"></p><div id="grid" class="grid"></div><p id="none" class="mut" hidden>No homes match these filters.</p></main>
+<dialog id="dlg"><form method="dialog" id="enq"><h2 id="dt">Enquiry</h2><label>Your name<input id="en" required maxlength="60"></label><label>Phone or email<input id="ec" required maxlength="80"></label><label>Message<textarea id="em" rows="3" maxlength="400"></textarea></label><p id="eerr" class="err" role="alert" hidden></p><div class="dact"><button type="button" id="cancel" class="ghost">Cancel</button><button class="btn" id="send">Send enquiry (demo)</button></div></form><p id="ok" hidden class="okmsg"></p></dialog>
+<footer>Demo built by Mahamed Yasser. Fictional agency.</footer>
+<script src="app.js"></script></body></html>
