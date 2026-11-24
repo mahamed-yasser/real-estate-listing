@@ -1,5 +1,9 @@
 # Cedar Homes (property listing demo)
 
+![Screenshot](docs/screenshot.png)
+
+_Screenshot (local test run, fictional demo data)._
+
 Property listing site with filters, sorting, saved homes and an enquiry form.
 
 **Demo project.** All businesses, products, people and numbers are fictional. Nothing is sent anywhere and no real data is collected.
